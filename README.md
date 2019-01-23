@@ -1,2 +1,2 @@
-# go
-Linksammlung DeineBeichte
+# /go
+## Linksammlung von DeineBeichte
