@@ -116,8 +116,7 @@
               <div class="media block-6 services p-3 py-4 d-block text-center">
                 <div class="icon mb-3"><span class="icon-whatsapp"></span></div>
                 <div class="media-body">
-                  <a href="https://wa.deinebeichte.com"><h3 class="heading">WhatsApp</h3></a>
-                  <a href="javascript:void(0)" id="wa" class="copy" data-clipboard-text="https://wa.deinebeichte.com" onclick="this.innerHTML = 'Kopiert!'"><p>In Zwischenablage kopieren</p></a>
+                  <a href="https://wa.deinebeichte.com"><h3 class="heading">WhatsApp Gruppe</h3></a>
                 </div>
               </div>
             </div>
@@ -126,7 +125,6 @@
                 <div class="icon mb-3"><span class="far fa-smile"></span></div>
                 <div class="media-body">
                   <a href="https://tell.deinebeichte.com"><h3 class="heading">Tellonym *</h3></a>
-                  <a href="javascript:void(0)" id="tell" class="copy" data-clipboard-text="https://tell.deinebeichte.com" onclick="this.innerHTML = 'Kopiert!'"><p>In Zwischenablage kopieren</p></a>
                 </div>
               </div>
             </div>
@@ -135,7 +133,6 @@
                 <div class="icon mb-3"><span class="icon-instagram"></span></div>
                 <div class="media-body">
                   <a href="https://instagram.com/deinebeichtecom"><h3 class="heading">Instagram</h3></a>
-                  <a href="javascript:void(0)" id="insta" class="copy" data-clipboard-text="https://instagram.com/deinebeichtecom" onclick="this.innerHTML = 'Kopiert!'"><p>In Zwischenablage kopieren</p></a>
                 </div>
               </div>
             </div>
@@ -207,7 +204,6 @@
 
     </div>
 
-
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -232,17 +228,6 @@
       });
     </script>
 
-    <!-- 2. Include library -->
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-
-    <!-- 3. Instantiate clipboard by passing a string selector -->
-    <script>
-    var clipboard = new ClipboardJS('.copy');
-    clipboard.on('success', function(e) {
-    });
-    clipboard.on('error', function(e) {
-    });
-    </script>
 
   </body>
 </html>
