@@ -1,2 +1,0 @@
-# /go
-## Linksammlung von DeineBeichte
