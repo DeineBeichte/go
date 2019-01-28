@@ -162,18 +162,29 @@
           <div class="row block-9">
             <div class="col-md-3"></div>
             <div class="col-md-6 pr-md-5">
-              <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfPbre_RRi3IO-E3YQMlGrXxFDIoKUwnw1ecVjbUfcxhvENiw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+              <script>
+                function onSubmit(token) {
+                  document.getElementById("invisible-recaptcha-form").submit();
+                }
+              </script>
+          <style>
+            .grecaptcha-badge {
+              display: none;
+            }
+          </style>
+
+                <form accept-charset="UTF-8" action="https://usebasin.com/f/6297383dfd36" enctype="multipart/form-data" method="POST" id="invisible-recaptcha-form">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Dein Name" name="entry.257012715" id="entry.257012715" required>
+                  <input type="text" class="form-control" placeholder="Dein Name" name="Name" id="Name" required>
                 </div>
                 <div class="form-group">
-                  <textarea name="entry.1185045765" id="entry.1185045765" cols="30" rows="7" class="form-control" placeholder="Deine Beichte..." required></textarea>
+                  <textarea name="Beichte" id="Beichte" cols="30" rows="7" class="form-control" placeholder="Deine Beichte..." required></textarea>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Abschicken" class="btn btn-primary py-3 px-5">
+                  <input data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline" type="submit" value="Abschicken" class="btn btn-primary py-3 px-5 g-recaptcha">
                 </div>
               </form>
-              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
             </div>
             <div class="col-md-3"></div>
           </div>
@@ -217,14 +228,6 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script type="text/javascript">var submitted=false;</script>
-    <script type="text/javascript">
-    $('#gform').on('submit', function(e) {
-      $('#gform *').fadeOut(2000);
-      $('#gform').prepend('Deine Beichte wurde gesendet...');
-      });
-    </script>
 
 
   </body>
